@@ -1,0 +1,35 @@
+extends layout
+
+block content
+	div(class="hero-unit", id="main")
+		center
+			img(src= '#{user.imglink}')
+			h2 #{user.name} from #{user.location}
+			p refresh page to make sure that your changes have been saved
+		div(id='do-stuff', class="#{user.config.music}")
+			h3 What would you like to do ?
+			
+			div(class="images")
+				p Choose a background image
+				a(href="#")
+					img(src="/images/background1-small.jpg", id="background1", href="#", class="backgroundimage")
+				a(href="#")
+					img(src="/images/background2-small.jpg", id="background2", href="#", class="backgroundimage")
+				a(href="#")
+					img(src="/images/background3-small.jpg", id="background3", href="#", class="backgroundimage")	
+			
+			div(class="songs")
+				p Choose a background song
+					<audio  preload> </audio>
+					ol 
+						li(class="songlove")
+							a(href="#", data-src="love.mp3") Can you feel the love tonight?
+						button(id="love", class="musicbutton") Use this
+						li(class="songbottle")
+							a(href="#", data-src="bottle.mp3") We're drinking from the bottle
+						button(id="bottle", class="musicbutton") Use this
+						li(class="songriver")
+							a(href="#", data-src="river.mp3") River flows in you
+						button(id="river", class="musicbutton") Use this
+					
+

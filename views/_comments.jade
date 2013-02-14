@@ -1,0 +1,8 @@
+if(comments != 'none')
+	
+	textarea(id="comment-box",  name="comment-text", placeholder="Enter Comment..")
+	button(id="SubmitComment", class="commentbutton") Comment
+	each comment in comments
+		p 
+			b #{comment.from.name} 
+			| : #{comment.message}

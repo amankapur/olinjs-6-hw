@@ -6,11 +6,21 @@ html
     link(rel='stylesheet', href='/stylesheets/index.css')
     link(rel='stylesheet', href='/stylesheets/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.css')
+    link(rel='stylesheet', href='/stylesheets/galleria.classic.css')
     script(src='http://code.jquery.com/jquery.js')
     script(src='/javascripts/main.js')
     script(src='/javascripts/bootstrap.js')
-    script(src='/javascripts/audio.min.js')
 
+    script(src='/javascripts/jquery.ui.core.js')
+    script(src='/javascripts/jquery.ui.widget.js')
+    script(src='/javascripts/galleria-1.2.9.js')
+    script(src='/javascripts/audio.min.js')
+    script(src='/javascripts/galleria.classic.js')
+    
+    
   body(class="#{user.config.backgroundimg}")
+  <audio autoplay loop> 
+  <source src="bottle.mp3">
+  </audio>
   div(class="container")
     block content

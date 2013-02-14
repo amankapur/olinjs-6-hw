@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	ul(class="albums")
+		each album in albums
+			li(id= album.id, class="albumname")
+				a(href="#", id= album.id) #{album.name}	
+	div(class="hero-unit", id="main")
+		div(id="image-container")
+			include _albumpics
+		div(id="comments")
+			include _comments
+		div(class="commentbutton")
+
+

@@ -1,0 +1,6 @@
+if(albumid != 'none')
+	div(id="galleria")
+		each image in albumid
+			img(src='#{image.source}', alt="#{image.id}")
+else
+	h1 click on album
